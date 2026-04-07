@@ -1,0 +1,17 @@
+<div class="notification-container">
+    <div class="bell-wrapper" onclick="toggleDropdown()">
+        <span class="bell-icon">🔔</span>
+        <span id="notif-badge" class="badge">0</span>
+    </div>
+
+    <div id="notif-dropdown" class="dropdown-hidden">
+        <div class="dropdown-header">Notifications</div>
+        <ul id="message-list">
+            <li class="empty-msg">No new messages</li>
+        </ul>
+    </div>
+</div>
+
+<div class="actions">
+    <button onclick="sendNotification()">Add Random Notification</button>
+</div>
