@@ -1,0 +1,35 @@
+.notification-container { position: relative; width: fit-content; cursor: pointer; }
+
+.bell-icon { font-size: 32px; }
+
+/* Dynamic Badge */
+.badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: none; /* Hidden when 0 */
+}
+
+/* Dropdown Logic */
+.dropdown-hidden { display: none; }
+.dropdown-show {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.message-item { padding: 10px; border-bottom: 1px solid #eee; font-size: 14px; }
+.empty-msg { padding: 10px; color: #888; text-align: center; }
